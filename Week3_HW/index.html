@@ -1,1 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    
+    <title>Document</title>
+    <script>
+        function fnMove(seq){
+            var offset = $("#section" + seq).offset();
+            $('html, body').animate({scrollTop : offset.top}, 600);
+        }
+    </script>
 
+
+</head>
+<body>
+    <!-- nav -->
+    <div class="navbar" >
+        <div class="centered">
+            <a href="#section1" onclick="fnMove('1')">Home</a>
+            <a href="#section2" onclick="fnMove('2')">Why Pro?</a>
+            <a href="#section3" onclick="fnMove('3')">Because It is pro</a>
+            <a href="#section4" onclick="fnMove('4')">Buy to me</a>
+        </div>
+        
+      </div>
+
+    
+ 
+      <div id="section1"></div>
+<br><br>
+
+    <!----- 그림 위에 글자 살짝 겹치게 ------>
+    
+   <div style="position: relative;">
+    <img class="relative" src="https://www.apple.com/v/macbook-pro-13/g/images/overview/hero_endframe__bsza6x4fldiq_large.jpg" 
+    alt="macbook">
+            <h2 class="centered">
+                <div style="left:630px; top: 500px; position:absolute;">
+
+            <div class="gradient" class="text" style="line-height:130%"; >
+           MacBook Pro,
+            <br>
+             진짜 갖고싶다.
+            </div>
+
+        </div>
+   </div>
+</h2>
+
+
+    <!------------------------------------------------>
+   <h3 class="centered">     
+        <br><br>
+        <p>
+        통조림 캔을 닮은 Apple MacBook Pro.<br>
+        그 어느 노트북과도 비교할 수 없는 간지 그 자체.<br>
+        Rose Gold 따위는 취급하지 않겠다는 Apple의 Pro급 색감정신.<br>
+        11배 빨라진 머신 러닝 성능을 쓸 일이 있을진 모르겠지만,<br>
+        갖고 있으면 혹시 쓸 일이 생기지 않을까?<br>
+        박민정이 좀 더 행복한 삶을 영위하는데 필요한 가격,<br>
+        고작 1,690,000원 부터.<br>
+        <br>
+        좀 더 쾌적한 삶에 필요한<br>
+        SSD 512GB는 1,960,000원 부터.
+        <br>
+    </p>
+    </h3>
+
+
+    <!------------------------------------------------------->
+
+
+    <div id="section2"></div>
+    <br><br><br><br><br><br><br><br>
+  
+    <div class="toleft">
+        <div class="title_container">
+            <div class="title_item">
+                <img src="./img/appleLogo.JPG" alt="appleLogo" width="80px">
+            </div>
+            <div class="title_item">MacBook Pro </div>
+        </div>
+        <div class="whiteTitle" style="line-height: 130%;"> 
+            <!-- <br> 간격 조정 line-height (출처 : https://m.blog.naver.com/PostView.nhn?blogId=cacung82&logNo=10174897883&proxyReferer=https:%2F%2Fwww.google.com%2F) -->
+            무슨 대단한 코딩을 한다고<br>
+            Pro까지 필요해?
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="./img/backgroundcard.png" alt="backgroundcard">
+
+        <div class="optext" style="line-height: 130%;">
+            <p>
+                Pro가 되기 위해선<br>
+                Pro급 마인드를<br>
+                가져야 하니까.<br>
+            </p>
+        </div>
+        <div class="whtext" style="line-height: 140%;">
+            <br>
+            <p>
+                Pro급 마인드는 Pro급 준비가 필요한 법.<br>
+                8코어 CPU와 8코어 GPU가 탑재된 M1 칩은<br>
+                막대한 작업량도, 복잡한 워크플로우도<br>
+                거뜬히 해낼 수 있습니다.<br>
+                M1칩을 가지고 있다는 것은 무엇이든 성공적으로 해낼 수 있다는 것,<br>
+                Pro급의 탄탄한 준비. 이것은 Pro급 마인드를 가지기에<br>
+                더할나위 없이 완벽하죠.<br>
+            </p>
+            
+        </div>
+    </div>
+    
+    <div id="section3"></div>
+    <br><br><br><br><br>
+    <div class="toleft">
+        <div class="whiteTitle" style="line-height: 130%;"> 
+            <!-- <br> 간격 조정 line-height (출처 : https://m.blog.naver.com/PostView.nhn?blogId=cacung82&logNo=10174897883&proxyReferer=https:%2F%2Fwww.google.com%2F) -->
+            <span style="color: rgb(173, 173, 173);">  미친 음질. 
+                미친 화질.<br>
+            스피커도, 마이크도, 카메라도, </span><br>
+            Pro이기 때문에.
+        </div>
+    </div>
+    <div class="centered">
+        <img src="./img/speaker2.JPG" alt="speaker">
+    </div>
+
+    <br><br><br><br><br>
+    <div class="toright">
+        <div class="whiteTitle" style="line-height: 130%;"> 
+            <!-- <br> 간격 조정 line-height (출처 : https://m.blog.naver.com/PostView.nhn?blogId=cacung82&logNo=10174897883&proxyReferer=https:%2F%2Fwww.google.com%2F) -->
+            
+            짜릿한 통조림.<br>
+            <span style="color: rgb(173, 173, 173);">  Apple이기에 가능한<br>
+                도시락 디자인. </span>
+        </div>
+    </div>
+    <div class="centered">
+        <img src="./img/mac.JPG" alt="speaker">
+    </div>
+
+
+
+    <br><br><br><br><br>
+
+
+
+
+    <div id="section4"></div>
+    <div class="end"> 
+        <div class="centered">
+            <br><br><br><br><br>
+            <h2>
+                사주세요.<br>
+                <div class="whiteTitle">
+                    314-91003-918-707 <br>
+                    하나은행 박민정
+                    </div>
+            </h2>
+
+            <h2 style="font-size: 30px;">
+                현재 대학생을 위한 교육할인 중. <br>
+                20% 할인 받을 수 있는 지금이 기회.
+                <br>
+                <div>
+                    <a href="https://www.apple.com/kr-k12/shop/buy-mac/macbook-pro/13%ED%98%95" style="color:rgb(120, 162, 218); font-size: 20px;""> 교육할인가로 사주기 > </a>
+                    
+                </div>
+            </h2>
+            
+                
+        </div>
+        <br><br><br><br><br> 
+    </div>
+    
+
+
+
+
+    
+
+  
+
+  
+</body>
+</html>

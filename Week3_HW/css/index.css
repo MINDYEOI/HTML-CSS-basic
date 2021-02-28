@@ -1,0 +1,274 @@
+/* CSS */
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 700;
+    src: local('Spoqa Han Sans Bold'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 400;
+    src: local('Spoqa Han Sans Regular'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    src: local('Spoqa Han Sans Light'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Spoqa Han Sans';
+    font-weight: 100;
+    src: local('Spoqa Han Sans Thin'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@01ff0283e4f36e159ffbf744b36e16ef742da6d8/Subset/SpoqaHanSans/SpoqaHanSansThin.ttf') format('truetype');
+}
+
+
+/******************/
+
+html,body {
+    height:100%;
+    width:100%;
+    background-color: black;
+    /*text-align: center; *//* 왜 body에 text-align: center을 해줘야 중앙 정렬이 되는 건가요?*/
+    color:rgb(214, 214, 214);
+    font-family: 'Spoqa Han Sans';
+}
+
+h2{
+    text-align: center;
+    color:rgb(214, 214, 214);
+    font-size:50px;
+    font-family: 'Spoqa Han Sans';
+}
+
+h3{
+    font-family: 'Spoqa Han Sans';
+    font-size:27px;
+    text-align: center;
+    color:rgb(173, 173, 173);
+    font-weight: 500;
+    
+}
+
+
+img.relative {
+    position: relative;
+        left: 330px;
+        top: 50px;
+}
+
+
+
+
+
+/* navigator 만들기 */
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 1;
+    
+  }
+
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #c0c0c0;
+    text-align: center;
+    padding: 15px 80px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    /*background: #ddd;*/
+    color: rgb(238, 238, 238);
+  }
+  
+  /* Main content */
+  .main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  }
+
+
+
+
+/* 가변폭의 컨텐츠를 중앙정렬 : 너비가 고정되어 있지 않는 콘텐츠를 가운데 정렬하는 법 */
+.centered { display: table; margin-left: auto; margin-right: auto; }
+/* 출처 : https://webdir.tistory.com/31 */
+
+/* 왼쪽에서 15% 떨어짐 */
+.toleft { display: table; margin-left: 15%; }
+
+/* 오른쪽에서 15% 떨어짐 */
+.toright { display: table; margin-left: 50%; text-align:right;}
+
+
+/************************ Gradient 만들기 ********************************/
+.gradient{
+    text-align: center;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin:0 auto;
+    color:blanchedalmond;
+    font-size:90px;
+    font-family: 'Spoqa Han Sans';
+    font-weight:bolder;
+    /* gradient 주려고 뽑아옴 출처 : https://lpla.tistory.com/9 */
+    display: inline-block;
+    padding: 1rem;
+    background: linear-gradient(#c2c2c2,#404142) !important;
+        /*★★ background-clip과 color가 포인트 ★★*/
+    -webkit-background-clip: text !important; /* 텍스트 영역에 배경이 보이도록 하는 것*/
+    color: transparent; /*텍스트를 투명하게 하면, 배경 색상이 텍스트에 입혀지는 것*/
+     /*********************/
+    /*cursor: pointer;*/
+    /**********************************************************************/
+}
+/******************************************************************************/
+
+
+/* flexbox */
+.title_container {
+    margin : 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.title_item
+{
+    color:rgb(173, 173, 173);
+    font-family: 'Spoqa Han Sans';
+    font-size:70px;
+    font-weight: 600;
+}
+/***************/
+
+
+/* flexbox2 */
+.grid_container {
+    margin : 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.grid_item
+{
+    background-color:rgb(49, 49, 49);
+    
+    color:rgb(173, 173, 173);
+    font-family: 'Spoqa Han Sans';
+    font-size:70px;
+    font-weight: 600;
+}
+/***************/
+
+
+.whiteTitle
+{
+    color:whitesmoke;
+    font-size: 75px;
+    font-weight: 600;
+    font-family: 'Spoqa Han Sans';
+}
+
+
+
+/****************** 그림 위에 글자 넣기 *****************/
+.image {
+    position:relative;
+    display: table; margin-left: auto; margin-right: auto; 
+}
+
+.image .optext {
+    position:absolute;
+    left:8%;
+    top:2px;
+    color: white;
+    opacity: 40%;
+    font-family: 'Spoqa Han Sans';
+    font-size:70px;
+    font-weight: 600;
+}
+
+.image .whtext {
+    position:absolute;
+    left:8%;
+    top:45%;
+    color: rgb(255, 255, 255);
+    opacity: 80%;
+    font-family: 'Spoqa Han Sans';
+    font-size:20px;
+    font-weight: 600;
+}
+
+/************** 그리드 ***************/
+/* 출처 : https://www.freecodecamp.org/news/how-to-create-an-image-gallery-with-css-grid-e0f0fd666a5c/ */
+/* 출처2 : https://heropy.blog/2019/08/17/css-grid/ */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 15px;
+
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Setting the object fit value to cover is
+           like setting the background size to cover for the background image. 
+            We are doing this so the image can fill the height and width of its box (the grid item), 
+            maintaining its aspect ratio*/
+    /* ↓ 이 부분은 그냥 다른 사이트 돌아다니다가 개발자 도구 보고 가져옴 */        
+    border: 0px solid #ccc;
+    background-color: #151517;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    /* ↑ */
+
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+.gallery__item--2 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 8;
+}
+
+/*****************************************/
+
+.end {
+    background-color: #151517;
+    color:rgb(173, 173, 173);
+    font-family: 'Spoqa Han Sans';
+}
