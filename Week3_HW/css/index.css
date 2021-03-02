@@ -272,3 +272,11 @@ img.relative {
     color:rgb(173, 173, 173);
     font-family: 'Spoqa Han Sans';
 }
+
+#footer {
+    background-color: black;
+    color:rgb(173, 173, 173);
+    font-family: 'Spoqa Han Sans';
+    padding:15px;
+    font-size: 12px;
+}
